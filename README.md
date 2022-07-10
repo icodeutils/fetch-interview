@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -48,3 +48,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 =======
 # mobile-layout
 >>>>>>> 127eaa6 (Initial commit)
+=======
+>>>>>>> 5b683d8 (delete old info in README.md)
