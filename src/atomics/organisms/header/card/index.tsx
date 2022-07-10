@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {ReactComponent as ArrowRight} from '../../../../assets/svg/header/arrow_right.svg';
+
 interface CardHeaderProps {
   coin_available: string | number;
   percent_complete: number;
@@ -32,9 +34,7 @@ const CardHeader: React.FC<CardHeaderProps> = ({
       <div>
         <div className='py-4 flex'>
           <a href={link_view} className='text-blue-600'>View tier benefits</a>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 18L15 12L9 6" stroke="#0062FF" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
-          </svg>
+          <ArrowRight />
         </div>
         <button type="button" className="w-full text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium text-xl dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 rounded-md py-4 px-2 mb-2">My Coupons</button>
       </div>

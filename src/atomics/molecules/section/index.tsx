@@ -23,7 +23,13 @@ const SectionItem: React.FC<SectionItemProps> = ({
     </div>
     <div className='flex gap-x-2 overflow-auto p-2'>
       {
-        section_data_list.map(data => <Card IconComponent={data.IconComponent} price_coin={data.price_coin} description={data.description} status={data.status} />)
+        section_data_list.map((data, index) => <Card
+          key={index.toString()}
+          IconComponent={data.IconComponent}
+          price_coin={data.price_coin}
+          description={data.description}
+          status={data.status}
+        />)
       }
     </div>
   </div>

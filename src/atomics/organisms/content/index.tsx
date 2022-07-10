@@ -88,7 +88,11 @@ const SECTION_DATA: {
 const Content = () => {
   return <div className='relative top-52 mb-72 p-2'>
     {
-      SECTION_DATA.map(section => <SectionItem title={section.title} section_data_list={section.data} />)
+      SECTION_DATA.map((section, index) => <SectionItem
+        key={index.toString()}
+        title={section.title}
+        section_data_list={section.data}
+      />)
     }
   </div>
 }

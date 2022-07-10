@@ -27,7 +27,10 @@ const DATA: NavigationBlockProps[] = [
 const Navigation: React.FC = () => {
   return <nav className="fixed bottom-0 inset-x-0 flex justify-between text-sm uppercase font-mono border-t-2 bg-white">
     {
-      DATA.map(navBlockItem => <NavigationBlock IconComponent={navBlockItem.IconComponent} />)
+      DATA.map((navBlockItem, index) => <NavigationBlock
+        key={index.toString()}
+        IconComponent={navBlockItem.IconComponent}
+      />)
     }
   </nav>
 }
